@@ -11,4 +11,4 @@
     command: aws ecs register-task-definition --cli-input-json file:///deploy/deploy/tasks/backend.json
   - name: ecsdeployment
     service: awsdeployment
-    command: aws ecs update-service --service my-backend-service --task-definition backend  
+    command: aws ecs update-service --service akhil-nginx-service --task-definition goapptask  
