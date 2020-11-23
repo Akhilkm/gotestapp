@@ -13,6 +13,7 @@ dockercfg_generator:
 
 awsdeployment:
   image: codeship/aws-deployment
+  cached: true
   encrypted_env_file:
     - aws-deployment.env.encrypted
   environment:
