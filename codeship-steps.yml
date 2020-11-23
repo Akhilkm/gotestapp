@@ -8,7 +8,7 @@
     dockercfg_service: dockercfg_generator
   - name: ecsdeployment-taskupdate
     service: awsdeployment
-    command: aws ecs register-task-definition --cli-input-json file:///deploy/tasks/backend.json
+    command: ls -al; aws ecs register-task-definition --cli-input-json deploy/tasks/backend.json
   - name: ecsdeployment
     service: awsdeployment
     command: aws ecs update-service --service my-backend-service --task-definition backend
