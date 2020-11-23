@@ -1,0 +1,10 @@
+myapp:
+  build:
+    image: 748738542010.dkr.ecr.us-east-1.amazonaws.com/akhil-dev-registry
+    dockerfile_path: Dockerfile
+
+dockercfg_generator:
+  image: codeship/aws-ecr-dockercfg-generator
+  add_docker: true
+  encrypted_env_file:
+    - aws-deployment.env.encrypted

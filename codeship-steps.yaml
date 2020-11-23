@@ -1,0 +1,6 @@
+- name: Push To ECR
+  service: myapp
+  type: push
+  image_name: 748738542010.dkr.ecr.us-east-1.amazonaws.com/akhil-dev-registry
+  registry: https://748738542010.dkr.ecr.us-east-1.amazonaws.com
+  dockercfg_service: dockercfg_generator
