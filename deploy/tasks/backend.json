@@ -1,12 +1,7 @@
 {
-    "ipcMode": null,
     "executionRoleArn": "arn:aws:iam::748738542010:role/ecsTaskExecutionRole",
     "containerDefinitions": [
       {
-        "dnsSearchDomains": null,
-        "environmentFiles": null,
-        "logConfiguration": null,
-        "entryPoint": null,
         "portMappings": [
           {
             "hostPort": 8000,
@@ -14,84 +9,21 @@
             "containerPort": 8000
           }
         ],
-        "command": null,
-        "linuxParameters": null,
         "cpu": 0,
-        "environment": [],
-        "resourceRequirements": null,
-        "ulimits": null,
-        "dnsServers": null,
-        "mountPoints": [],
-        "workingDirectory": null,
-        "secrets": null,
-        "dockerSecurityOptions": null,
         "memory": 512,
         "memoryReservation": 128,
         "volumesFrom": [],
-        "stopTimeout": null,
         "image": "748738542010.dkr.ecr.us-east-1.amazonaws.com/akhil-dev-registry",
-        "startTimeout": null,
-        "firelensConfiguration": null,
-        "dependsOn": null,
-        "disableNetworking": null,
-        "interactive": null,
-        "healthCheck": null,
-        "essential": true,
-        "links": null,
-        "hostname": null,
-        "extraHosts": null,
-        "pseudoTerminal": null,
-        "user": null,
-        "readonlyRootFilesystem": null,
-        "dockerLabels": null,
-        "systemControls": null,
-        "privileged": null,
         "name": "gotest"
       }
     ],
     "placementConstraints": [],
     "memory": "1024",
     "taskRoleArn": "arn:aws:iam::748738542010:role/ecsTaskExecutionRole",
-    "compatibilities": [
-      "EC2"
-    ],
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:748738542010:task-definition/goapptask:1",
     "family": "goapptask",
-    "requiresAttributes": [
-      {
-        "targetId": null,
-        "targetType": null,
-        "value": null,
-        "name": "com.amazonaws.ecs.capability.ecr-auth"
-      },
-      {
-        "targetId": null,
-        "targetType": null,
-        "value": null,
-        "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
-      },
-      {
-        "targetId": null,
-        "targetType": null,
-        "value": null,
-        "name": "com.amazonaws.ecs.capability.task-iam-role"
-      },
-      {
-        "targetId": null,
-        "targetType": null,
-        "value": null,
-        "name": "ecs.capability.execution-role-ecr-pull"
-      }
-    ],
-    "pidMode": null,
     "requiresCompatibilities": [
       "EC2"
     ],
     "networkMode": "bridge",
-    "cpu": "128",
-    "revision": 1,
-    "status": "ACTIVE",
-    "inferenceAccelerators": null,
-    "proxyConfiguration": null,
-    "volumes": []
+    "cpu": "128"
   }
