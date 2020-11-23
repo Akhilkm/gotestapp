@@ -14,7 +14,7 @@
         "memoryReservation": 128,
         "volumesFrom": [],
         "image": "748738542010.dkr.ecr.us-east-1.amazonaws.com/akhil-dev-registry",
-        "name": "gotest"
+        "name": "nginx"
       }
     ],
     "placementConstraints": [],
