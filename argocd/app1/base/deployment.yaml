@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gotestapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: gotestapp
+  template:
+    metadata:
+    spec:
+      containers:
+      - name: gotestapp
+        image: akhilkm/gotestapp
+        env:
+        - name: message
+          value: "Hello from the environment"
+        ports:
+        - containerPort: 8000

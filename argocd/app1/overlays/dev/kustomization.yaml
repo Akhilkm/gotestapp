@@ -1,0 +1,14 @@
+bases:
+  - ../../base
+
+commonLabels:
+  Environment: gotestapp
+
+namePrefix: dev-
+
+patches:
+  - path: env.yaml
+
+replicas:
+- name: gotestapp
+  count: 1
