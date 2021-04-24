@@ -12,6 +12,3 @@ patches:
 replicas:
 - name: gotestapp
   count: 1
-
-resources:
-  - ./namespace.yaml
