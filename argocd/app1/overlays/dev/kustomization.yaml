@@ -2,7 +2,7 @@ bases:
   - ../../base
 
 commonLabels:
-  Environment: gotestapp
+  app: gotestapp
 
 namePrefix: dev-
 
