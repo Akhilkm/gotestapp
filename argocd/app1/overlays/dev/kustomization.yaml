@@ -14,4 +14,4 @@ replicas:
   count: 1
 
 resources:
-  - namespace.yaml
+  - ./namespace.yaml
