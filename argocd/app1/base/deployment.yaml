@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: gotestapp
-        image: akhilkm/gotestapp
+        image: akhilkm/gotestapp:latest
         env:
         - name: message
           value: "Hello from the environment"
