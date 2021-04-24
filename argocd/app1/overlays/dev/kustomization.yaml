@@ -8,8 +8,10 @@ namePrefix: dev-
 
 patches:
   - path: env.yaml
-  - path: namespace.yaml
 
 replicas:
 - name: gotestapp
   count: 1
+
+resources:
+  - namespace.yaml
