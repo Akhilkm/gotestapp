@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gotestapp
+  name: gotestapp2
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: gotestapp
+      app: gotestapp2
   template:
     metadata:
     spec:
       containers:
-      - name: gotestapp
-        image: akhilkm/gotestapp
+      - name: gotestapp2
+        image: akhilkm/gotestapp:latest
         env:
         - name: message
           value: "Hello from the environment"

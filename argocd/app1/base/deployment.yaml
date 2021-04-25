@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gotestapp
+  name: gotestapp1
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: gotestapp
+      app: gotestapp1
   template:
     metadata:
     spec:
       containers:
-      - name: gotestapp
+      - name: gotestapp1
         image: akhilkm/gotestapp:latest
         env:
         - name: message

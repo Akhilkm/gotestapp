@@ -2,7 +2,7 @@ bases:
   - ../../base
 
 commonLabels:
-  app: gotestapp
+  app: gotestapp1
 
 namePrefix: dev-
 
@@ -12,7 +12,7 @@ patches:
   - path: env.yaml
 
 replicas:
-- name: gotestapp
+- name: gotestapp1
   count: 1
 
 resources:
