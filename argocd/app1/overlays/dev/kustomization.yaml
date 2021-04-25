@@ -6,6 +6,8 @@ commonLabels:
 
 namePrefix: dev-
 
+namespace: rfk-dev
+
 patches:
   - path: env.yaml
 
