@@ -1,0 +1,19 @@
+bases:
+  - ../../base
+
+commonLabels:
+  app: gotestapp1
+
+namePrefix: uat-
+
+namespace: rfk-uat
+
+patches:
+  - path: env.yaml
+
+replicas:
+- name: gotestapp1
+  count: 1
+
+resources:
+  - ./namespace.yaml
